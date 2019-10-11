@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<android.support.constraint.ConstraintLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--&gt;-->
+<!--<include layout="@layout/toolbar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="?attr/actionBarSize"-->
+    <!--app:layout_constraintTop_toTopOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--android:id="@+id/toolbar_layout"-->
+    <!--/>-->
+
+
+
+<!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:orientation="vertical"-->
+    <!--android:id="@+id/scroll"-->
+    <!--app:layout_constraintTop_toTopOf="parent"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent">-->
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+        <android.support.constraint.ConstraintLayout
+
+            android:id="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+
+            <android.support.v4.view.ViewPager
+            android:id="@+id/imageviewpager"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/artisan_img"
+            app:layout_constraintEnd_toEndOf="@id/mainLayout"
+            app:layout_constraintStart_toStartOf="@id/mainLayout"
+            android:padding="0dp"
+            app:layout_constraintTop_toTopOf="@id/mainLayout"/>
+
+    <artisanng.hycode.artisanng.DynamicImageView
+        android:id="@+id/imageviewpager0"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/artisan_img"
+
+        app:layout_constraintEnd_toEndOf="@id/mainLayout"
+        app:layout_constraintStart_toStartOf="@id/mainLayout"
+        android:padding="0dp"
+        app:layout_constraintTop_toTopOf="@id/mainLayout" />
+
+            <!--<android.support.v7.widget.CardView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/cardLayout"-->
+                <!--app:layout_constraintTop_toBottomOf="@+id/imageviewpager"-->
+                <!--app:layout_constraintStart_toStartOf="@id/imageviewpager"-->
+                <!--app:cardBackgroundColor="@color/white"-->
+
+                <!--app:cardUseCompatPadding="true">-->
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@+id/imageviewpager"
+    app:layout_constraintStart_toStartOf="@id/imageviewpager"
+
+    >
+
+
+        <TextView
+            android:text="Description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/product_desc"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+android:divider="@color/colorPrimary"
+
+            android:layout_below="@+id/product_desc"
+            android:theme="@style/AlertDialog.AppCompat"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rating"
+                android:textColor="@color/colorPrimary"
+                android:layout_margin="10dp"
+                android:id="@+id/rating"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="|"
+                android:textSize="15dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:textColor="@color/colorPrimary"
+                android:layout_margin="10dp"
+                android:id="@+id/category"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="|"
+                android:textSize="15dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textColor="@color/colorPrimary"
+                android:layout_margin="10dp"
+                android:id="@+id/status"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Key"
+                android:visibility="gone"
+
+                android:id="@+id/key"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="img_text"
+                android:visibility="gone"
+
+                android:id="@+id/img_text"/>
+
+        </LinearLayout>
+
+
+</RelativeLayout>
+            <!--</android.support.v7.widget.CardView>-->
+
+        </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>
+<!--</ScrollView>-->
+
+
+
+
+    <!--&lt;!&ndash;</ScrollView>&ndash;&gt;-->
+<!--</android.support.constraint.ConstraintLayout>-->

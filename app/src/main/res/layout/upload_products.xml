@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+<android.support.constraint.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/toolbar_layout"
+        />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/artisan_img"
+        android:padding="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_layout" />
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/insert_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/choose_imgg"
+        app:layout_constraintStart_toStartOf="@+id/title"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <ImageView
+        android:id="@+id/view_image"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/insert_img"
+        app:layout_constraintTop_toBottomOf="@+id/insert_img"
+        app:srcCompat="@drawable/ripple_border" />
+
+    <ImageView
+        android:id="@+id/view_image2"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:visibility="gone"
+        android:layout_marginStart="8dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/view_image"
+        app:layout_constraintStart_toEndOf="@+id/view_image"
+        app:layout_constraintTop_toTopOf="@+id/view_image"
+        app:srcCompat="@drawable/ripple_border" />
+    <ImageView
+        android:id="@+id/view_image3"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:visibility="gone"
+        android:layout_marginStart="8dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/view_image2"
+        app:layout_constraintStart_toEndOf="@+id/view_image2"
+        app:layout_constraintTop_toTopOf="@+id/view_image2"
+        app:srcCompat="@drawable/ripple_border" />
+    <ImageView
+        android:id="@+id/view_image4"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:visibility="gone"
+        android:layout_marginStart="8dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/view_image3"
+        app:layout_constraintStart_toEndOf="@+id/view_image3"
+        app:layout_constraintTop_toTopOf="@+id/view_image3"
+        app:srcCompat="@drawable/ripple_border" />
+    <ImageView
+        android:id="@+id/view_image5"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/view_image"
+        app:layout_constraintTop_toBottomOf="@+id/view_image"
+        app:srcCompat="@drawable/ripple_border" />
+
+    <ImageView
+        android:id="@+id/view_image6"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:visibility="gone"
+        android:layout_marginStart="8dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/view_image5"
+        app:layout_constraintStart_toEndOf="@+id/view_image5"
+        app:layout_constraintTop_toTopOf="@+id/view_image5"
+        app:srcCompat="@drawable/ripple_border" />
+    <ImageView
+        android:id="@+id/view_image7"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:visibility="gone"
+        android:layout_marginStart="8dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/view_image6"
+        app:layout_constraintStart_toEndOf="@+id/view_image6"
+        app:layout_constraintTop_toTopOf="@+id/view_image6"
+        app:srcCompat="@drawable/ripple_border" />
+    <ImageView
+        android:id="@+id/view_image8"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:visibility="gone"
+        android:layout_marginStart="8dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/view_image7"
+        app:layout_constraintStart_toEndOf="@+id/view_image7"
+        app:layout_constraintTop_toTopOf="@+id/view_image7"
+        app:srcCompat="@drawable/ripple_border" />
+    <EditText
+        android:id="@+id/edit_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toStartOf="@+id/view_image"
+        app:layout_constraintTop_toBottomOf="@+id/view_image" />
+
+    <!--<EditText-->
+        <!--android:id="@+id/edit_category"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:ems="10"-->
+        <!--android:hint="Category"-->
+        <!--android:inputType="textPersonName"-->
+        <!--app:layout_constraintEnd_toEndOf="@+id/edit_description"-->
+        <!--app:layout_constraintStart_toStartOf="@+id/edit_description"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/edit_description" />-->
+    <Spinner
+        android:id="@+id/edit_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Category"
+        android:inputType="textPersonName"
+
+        app:layout_constraintStart_toStartOf="@+id/edit_description"
+        app:layout_constraintTop_toBottomOf="@+id/edit_description"/>
+
+
+
+
+    <Button
+        android:id="@+id/btn_post"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Post Product"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/edit_description"
+        app:layout_constraintStart_toStartOf="@+id/edit_description"
+        app:layout_constraintTop_toBottomOf="@+id/edit_category"
+        />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/img_txt"
+    android:visibility="gone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_txt2"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_txt3"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_txt4"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_txt5"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_txt6"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_txt7"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_txt8"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtInsertId"
+        android:visibility="gone"/>
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>
